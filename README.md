@@ -2,7 +2,9 @@
 Beispiel mit NATS-Server und Moleculer
 
 ## Run
-Stelle sicher, NATS gestartet ist.
+Installiere [NATS](https://nats.io/download/nats-io/nats-server/)
+
+Entpacke und starte ```nats-server```.
 
 Dann:
 
