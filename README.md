@@ -9,8 +9,10 @@ Entpacke und starte ```nats-server```.
 Dann:
 
 ```
-yarn start
+yarn dev
 ```
+
+für Hotloading Services!
 
 ## Im Browser:
 

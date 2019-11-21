@@ -2,11 +2,13 @@
     "name": "obstladen",
     "license": "MIT",
     "dependencies": {
-      "moleculer": "^0.13.9",
-      "moleculer-web": "^0.8.5",
-      "nats": "^1.2.10"
+        "moleculer": "^0.13.9",
+        "moleculer-repl": "^0.6.1",
+        "moleculer-web": "^0.8.5",
+        "nats": "^1.2.10"
     },
     "scripts": {
-        "start": "node index.js"
+        "start": "moleculer-runner --instances=4 services",
+        "dev": "moleculer-runner --repl --hot services"
     }
-  }
+}

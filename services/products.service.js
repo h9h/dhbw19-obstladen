@@ -1,19 +1,11 @@
-const { ServiceBroker } = require("moleculer");
-
-// Define nodeID and set the communication bus
-const node = new ServiceBroker({
-  nodeID: "node-2",
-  transporter: "NATS"
-});
-
 const obst = [
   { name: "Apples", price: 5 },
   { name: "Oranges", price: 3 },
-  { name: "Bananas", price: 2 }
+  { name: "Bananas", price: 2 },
+  { name: "Papaya", price: 10 },
 ]
 
-// Create the "products" service
-node.createService({
+module.exports = {
   // Define service name
   name: "products",
 
@@ -26,6 +18,5 @@ node.createService({
         return obst[ctx.params.index]
     }
   }
-});
+}
 
-module.exports = node;
