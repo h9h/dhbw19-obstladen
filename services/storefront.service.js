@@ -1,4 +1,4 @@
-,const APIGateway = require("moleculer-web")
+const APIGateway = require("moleculer-web")
 
 module.exports = {
   // Define service name
