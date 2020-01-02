@@ -1,4 +1,4 @@
-const APIGateway = require("moleculer-web")
+,const APIGateway = require("moleculer-web")
 
 module.exports = {
   // Define service name
@@ -10,7 +10,11 @@ module.exports = {
       {
         aliases: {
           "GET /products": "products.listProducts",
-          "GET /products/:index": "products.getProduct"
+          "GET /products/:index": "products.getProduct",
+          "GET /favicon.ico"(route, req, res) {
+            return
+          }
+
         }
       }
     ]
