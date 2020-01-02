@@ -1,18 +1,12 @@
 # dhbw19-obstladen
-Beispiel mit NATS-Server und Moleculer
+Beispiel mit Moleculer
 
 ## Run
-Installiere [NATS](https://nats.io/download/nats-io/nats-server/)
-
-Entpacke und starte ```nats-server```.
-
-Dann:
 
 ```
 yarn dev
 ```
-
-für Hotloading Services!
+für hotloading services
 
 ## Im Browser:
 
