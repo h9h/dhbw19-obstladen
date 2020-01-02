@@ -9,7 +9,7 @@ module.exports = {
     routes: [
       {
         aliases: {
-          "GET /"(route, req, res){
+          "GET /"(req, res){
             res.end('Obstladen')
           },
           "GET /products": "products.listProducts",
