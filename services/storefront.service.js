@@ -9,9 +9,12 @@ module.exports = {
     routes: [
       {
         aliases: {
+          "GET /"(route, req, res){
+            res.end('Obstladen')
+          },
           "GET /products": "products.listProducts",
           "GET /products/:index": "products.getProduct",
-          "GET /favicon.ico"(route, req, res) {
+          "GET /favicon.ico"() {
             return
           }
 
